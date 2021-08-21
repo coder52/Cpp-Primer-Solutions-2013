@@ -1,8 +1,6 @@
-#ifndef PAGE_117_H
-#define PAGE_117_H
-
-#include <vector>
-
+#ifndef PAGE_117_CC
+#define PAGE_117_CC
+#include "functions.h"
 
 
 void page_117_exercise_3_31_32(){

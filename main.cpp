@@ -1,5 +1,6 @@
 #include <iostream>
-#include "page_117.h"
+#include "page_117.cc"
+#include "page_124.cc"
 
 int main(int argc, char const *argv[]) {
 
