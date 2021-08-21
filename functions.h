@@ -8,6 +8,7 @@
 
 using std::string;
 
+void page_126_Ex_41_42();
 void page_121_Ex_3_35_sol_2();
 void page_121_Ex_3_35_sol_1();
 void page_121_Ex_3_35_sol_1();
