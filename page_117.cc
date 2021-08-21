@@ -1,6 +1,15 @@
-#ifndef PAGE_117_CC
-#define PAGE_117_CC
-#include "functions.h"
+#include <iostream>
+#include <vector>
+
+
+void page_117_exercise_3_31_32();
+
+int main(int argc, char const *argv[]) {
+
+  page_117_exercise_3_31_32();
+
+  return 0;
+}
 
 
 void page_117_exercise_3_31_32(){
@@ -26,5 +35,3 @@ void page_117_exercise_3_31_32(){
     std::cout<<i<<" ";
 
 }
-
-#endif

@@ -1,6 +1,18 @@
-#ifndef PAGE_124_CC
-#define PAGE_124_CC
-#include "functions.h"
+#include <iostream>
+#include <string>
+#include <cstring>
+
+using std::string;
+
+void page_124_Ex_3_40();
+void page_124_Ex_3_39();
+
+int main(int argc, char const *argv[]) {
+
+  // page_124_Ex_3_40();
+  page_124_Ex_3_39();
+  return 0;
+}
 
 void page_124_Ex_3_40(){
   /*Page 124
@@ -35,5 +47,3 @@ void page_124_Ex_3_39(){
   std::cout<< (str1 > str2) <<std::endl;
   std::cout<< std::strcmp(charray1, charray2) <<std::endl;
 }
-
-#endif

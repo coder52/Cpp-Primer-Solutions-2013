@@ -1,7 +1,18 @@
-#ifndef PAGE_121_CC
-#define PAGE_121_CC
+#include <iostream>
 
-#include "functions.h"
+
+void page_121_Ex_3_35_sol_1();
+void page_121_Ex_3_35_sol_2();
+
+
+int main(int argc, char const *argv[]) {
+
+  // page_121_Ex_3_35_sol_1();
+  page_121_Ex_3_35_sol_2();
+
+  return 0;
+}
+
 
 void page_121_Ex_3_35_sol_1(){
   /* Page 121 Solution 1
@@ -33,8 +44,3 @@ void page_121_Ex_3_35_sol_2(){
       std::cout<<i<<" ";
     }
 }
-
-
-
-
-#endif

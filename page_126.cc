@@ -1,7 +1,14 @@
-#ifndef PAGE_126_CC
-#define PAGE_126_CC
+#include <iostream>
+#include <vector>
 
-#include "functions.h"
+void page_126_Ex_41_42();
+
+int main(int argc, char const *argv[]) {
+
+  page_126_Ex_41_42();
+
+  return 0;
+}
 
 void page_126_Ex_41_42(){
   /*page 126
@@ -29,5 +36,3 @@ void page_126_Ex_41_42(){
     std::cout<<i<<" ";
   }
 }
-
-#endif
