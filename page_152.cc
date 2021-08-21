@@ -71,18 +71,3 @@ void page_152_Ex_4_21(){
     std::cout<<i<<" ";
   }
 }
-
-void page_144_Ex_4_11(){
-  /*
-  Exercise 4.11: Write an expression that tests four values, a, b, c, and d, and ensures
-  that a is greater than b, which is greater than c, which is greater than d.
-  */
-  int a=99;
-  int b=88;
-  int c=77;
-  int d=66;
-
-  bool test= a>b && b>c && c>d;
-
-  std::cout<<test;
-}
