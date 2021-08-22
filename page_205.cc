@@ -8,11 +8,12 @@ int main(int argc, char const *argv[]) {
   page_205_6_3_4();
 
   // Exercise 6.5
-  std::cout<<"Enter a number which you want to get the absolute value of it."<<std::endl;
+  std::cout<< "Enter a number which you want to get the absolute value of it.";
+  std::cout << std::endl;
   int i;
   std::cin>>i;
   int abs =  page_205_6_5(i);
-  std::cout<<"Absolute value of "<<i<<" is "<<abs<<"."<<std::endl;
+  std::cout<< "Absolute value of " << i << " is " <<abs<< "." << std::endl;
 
   return 0;
 }
@@ -32,15 +33,17 @@ void page_205_6_3_4(){
     Exercise 6.4: Write a function that interacts with the user, asking for a number and
     generating the factorial of that number. Call this function from main.
   */
-  std::cout<<"Enter a number which you want to get the factorial of it."<<std::endl;
-  int x;
-  std::cin>>x;
-  long long fact=0.0;
-  if(x>0)
-    fact=1;
-    for(unsigned i=1;i<=x;i++){
+  std::cout<< "Enter a number which you want to get the factorial of it.";
+  std::cout<< std::endl;
+
+  int number;
+  std::cin>>number;
+  long long fact=0.0; // 0!=0
+  if(number>0)     // when the number bigger than zero
+    fact=1;         // assign fact to 1 for the production
+    for(unsigned i=1;i<=number;i++){
       fact*=i;
     }
-  std::cout<<"\n"<<fact<<std::endl;
-  std::cout<<"Factorial of "<<x<<" is "<<fact<<"."<<std::endl;
+  std::cout<< "\n" << fact << std::endl;
+  std::cout<< "Factorial of " << number <<" is "<< fact << "." << std::endl;
 }
