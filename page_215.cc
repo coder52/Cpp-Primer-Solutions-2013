@@ -22,7 +22,7 @@ int main(int argc, char const *argv[]) {
 
   //////////////////////////////////////////////////////
   //Page 215 Exercise 6.18 b:
-  vector<int> nums_vec={0,1,2,3,4,-1};
+  vector<int> nums_vec={0,1,2,3,4,-1}; // marked nums_vec with -1 thus we can find last element
   int i=3;
   vector<int> vec=change_val(i,nums_vec.begin());
   for(int i:vec){
