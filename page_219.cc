@@ -9,9 +9,9 @@ void page_219_6_23(const int* x, int size=0){
   this section. Call each of these functions to print i and j defined as follows:
       int i = 0, j[2] = {0, 1};
   */
-  if(size==0)  // default operation is this
+  if(!size)  // default operation is this
     std::cout<<*x<<std::endl;  // this can print first element of array or &integer
-  if(size){   // if size bigger than 0 this will print array elements. 
+  if(size){   // if size bigger than 0 this will print array elements.
     for(size_t i=0;i!=size;i++)
       std::cout<<x[i]<<" ";
     std::cout<<std::endl;
