@@ -3,6 +3,17 @@
 
 using namespace std;
 
+void page228_6_33_solI(vector<int>::iterator beg, vector<int>::iterator end);
+void page228_6_33_sol_II(vector<int> vec);
+
+int main(int argc, char const *argv[]) {
+
+  vector<int> vec = {0,1,2,3,4,5,6,7,8,9};
+  // page228_6_33_solI(vec.begin(),vec.end());
+  page228_6_33_sol_II(vec);
+  return 0;
+}
+
 void page228_6_33_solI(vector<int>::iterator beg, vector<int>::iterator end){
   /*Page 228 Solution I
    Exercise 6.33: Write a recursive function to print the contents of a vector.
@@ -22,12 +33,4 @@ void page228_6_33_sol_II(vector<int> vec){
     vec.erase(vec.begin());
     page228_6_33_sol_II(vec);
   }
-}
-
-int main(int argc, char const *argv[]) {
-
-  vector<int> vec = {0,1,2,3,4,5,6,7,8,9};
-  // page228_6_33_solI(vec.begin(),vec.end());
-  page228_6_33_sol_II(vec);
-  return 0;
 }
