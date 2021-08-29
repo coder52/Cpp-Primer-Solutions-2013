@@ -7,13 +7,20 @@ string str_arr[5] = {"one","two","three","four","five"};
 // page_230_6_36
 string (*page_230_6_36())[5];
 // page_230_6_37
-//a. type alias
+  //a. type alias
 typedef string strArrT [5];
 strArrT* page_230_6_37_a();
-// b. Trailing Return Type
+  // b. Trailing Return Type
 auto page_230_6_37_b() -> string (*) [5];
-// c. decltype
+  // c. decltype
 decltype(str_arr)* page_230_6_37_c();
+// page_230_6_38
+int odd[] = {1,3,5,7,9};
+int even[] = {0,2,4,6,8};
+// returns a reference to an array of five int elements
+decltype(odd) &page_230_6_38(int i) {
+  return (i % 2) ? odd : even; // returns a pointer to the array
+}
 
 int main() {
 
@@ -25,7 +32,12 @@ int main() {
   for(auto i:*str){
     cout<<i<<" ";
   }
-
+  cout<<endl;
+///////////////////////////////////////////////////
+  int (&nums)[5] = page_230_6_38(1);
+  for(auto i:nums){
+    cout<<i<<" ";
+  }
 }
 
 string (*page_230_6_36())[5] {
