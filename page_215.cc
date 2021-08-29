@@ -10,7 +10,7 @@ struct matrix{};
 
 void page_215_6_17_a(string s);
 void page_215_6_17_b(string s);
-//Page 215 Exercise 6.18 b:
+//Page 215 Exercise 6.18 a:  There is no defination for this decleration
 bool compare(matrix m1, matrix m2);
 //Page 215 Exercise 6.18 b:
 vector<int> change_val(int n, vector<int>::iterator iter);
@@ -24,7 +24,7 @@ int main(int argc, char const *argv[]) {
   //Page 215 Exercise 6.18 b:
   vector<int> nums_vec={0,1,2,3,4,-1}; // marked nums_vec with -1 thus we can find last element
   int i=3;
-  vector<int> vec=change_val(i,nums_vec.begin());
+  vector<int> vec = change_val(i,nums_vec.begin());
   for(int i:vec){
     std::cout<<i<<", ";
   }
