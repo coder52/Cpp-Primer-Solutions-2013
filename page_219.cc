@@ -3,20 +3,7 @@
 int page_219_6_21(int x, int* ptr_y);
 void page_219_6_22(int** ptr_x, int** ptr_y);
 
-void page_219_6_23(const int* x, int size=0){
-  /* Page 219
-  Exercise 6.23: Write your own versions of each of the print functions presented in
-  this section. Call each of these functions to print i and j defined as follows:
-      int i = 0, j[2] = {0, 1};
-  */
-  if(!size)  // default operation is this
-    std::cout<<*x<<std::endl;  // this can print first element of array or &integer
-  if(size){   // if size bigger than 0 this will print array elements.
-    for(size_t i=0;i!=size;i++)
-      std::cout<<x[i]<<" ";
-    std::cout<<std::endl;
-  }
-}
+void page_219_6_23(const int* x, int size=0);
 
 int main(int argc, char const *argv[]) {
   int i = 15;
@@ -61,4 +48,19 @@ void page_219_6_22(int** ptr_x, int** ptr_y){
   int* ptr_dummy = *ptr_x;
   *ptr_x = *ptr_y;
   *ptr_y = ptr_dummy;
+}
+
+void page_219_6_23(const int* x, int size){
+  /* Page 219
+  Exercise 6.23: Write your own versions of each of the print functions presented in
+  this section. Call each of these functions to print i and j defined as follows:
+      int i = 0, j[2] = {0, 1};
+  */
+  if(!size)  // default operation is this
+    std::cout<<*x<<std::endl;  // this can print first element of array or &integer
+  if(size){   // if size bigger than 0 this will print array elements.
+    for(size_t i=0;i!=size;i++)
+      std::cout<<x[i]<<" ";
+    std::cout<<std::endl;
+  }
 }
