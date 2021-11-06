@@ -1,6 +1,5 @@
 #ifndef SALES_DATA_H
 #define SALES_DATA_H
-#include <string>
 
 /*
 Exercise 7.2: Add the combine and isbn members to the Sales_data class you
