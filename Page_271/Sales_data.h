@@ -2,9 +2,13 @@
 #define SALES_DATA_H
 
 /* Page 271
-Exercise 7.21: Update your Sales_data class to hide its implementation. The programs
-you’ve written to use Sales_data operations should still continue to work.
-Recompile those programs with your newclass definition to verify that they still work.
+  Exercise 7.21: Update your Sales_data class to hide its implementation. The programs
+  you’ve written to use Sales_data operations should still continue to work.
+  Recompile those programs with your newclass definition to verify that they still work.
+*/
+
+/* Page 275
+  Exercise 7.26: Define Sales_data::avg_price as an inline function.
 */
 
 struct Sales_data {
@@ -38,6 +42,7 @@ Sales_data& Sales_data::combine(const Sales_data &rhs) {
   return *this; // return the object on which the function was called
 }
 
+inline  // Page 275 Exercise 7.26:
 double Sales_data::avg_price() const {
   if (units_sold)
     return revenue/units_sold;
