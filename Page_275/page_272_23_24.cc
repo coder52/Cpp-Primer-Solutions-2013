@@ -24,10 +24,11 @@ int main(int argc, char const *argv[]){
   Screen sc_3(23, 34, 'f');
   print(std::cout, sc_3);
 
+  //Exercise 7.25
   Screen sc_x = sc_2;
   print(std::cout, sc_x);
 
-  sc_x=sc_3;
+  sc_x = sc_3;
   print(std::cout, sc_x);
 
 
