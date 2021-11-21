@@ -16,20 +16,20 @@
 int main(int argc, char const *argv[]){
 
   Screen sc_1;
-  print(std::cout, sc_1);
+  print_screen(std::cout, sc_1);
 
-  Screen sc_2 = {11, 45};
-  print(std::cout, sc_2);
+  Screen sc_2 = {15, 20};
+  print_screen(std::cout, sc_2);
 
-  Screen sc_3(23, 34, 'f');
-  print(std::cout, sc_3);
+  Screen sc_3(13, 19, 'f');
+  print_screen(std::cout, sc_3);
 
   //Exercise 7.25
   Screen sc_x = sc_2;
-  print(std::cout, sc_x);
+  print_screen(std::cout, sc_x);
 
   sc_x = sc_3;
-  print(std::cout, sc_x);
+  print_screen(std::cout, sc_x);
 
 
 

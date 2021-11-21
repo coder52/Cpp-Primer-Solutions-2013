@@ -12,19 +12,27 @@
   If so, why? If not, why not?
 */
 class Screen{
-    friend std::ostream &print(std::ostream &, const Screen &);
+    friend std::ostream &print_screen(std::ostream &, const Screen &);
   public:
     using pos = std::string::size_type;   // typdef unsigned pos;
     //constructors
     Screen() = default;
-    Screen(pos ht, pos wd) : height(ht), width(wd) {}
-    Screen(pos ht, pos wd, char ch) : height(ht), width(wd), character(ch) {}
+    Screen(pos ht, pos wd) : height(ht), width(wd), contents(ht*wd, ' ') {}
+    Screen(pos ht, pos wd, char ch) : height(ht), width(wd), contents(ht*wd, ch) {}
   private:
-    pos height = 0, width = 0;
-    char character = ' ';
+    pos cursor;           // position of cursor on the screen
+    pos height = 0, width = 0;    // height and width of the screen
+    std::string contents;
 };
 
-std::ostream &print(std::ostream &os, const Screen &sc){
-  os<<sc.height<<" "<<sc.width<<" "<<sc.character<<std::endl;
+std::ostream &print_screen(std::ostream &os, const Screen &sc){
+  static unsigned count=0;
+  os<<"Screen "<<count++<<" :"<<sc.height<<"x"<<sc.width<<std::endl;
+  for(unsigned i=0; i<sc.height;i++){
+    for(unsigned j=0; j<sc.width;j++){
+      os<<sc.contents[(i*sc.width + j)];
+    }
+    std::cout<<std::endl;
+  }
   return os;
 }
