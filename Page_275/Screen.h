@@ -1,6 +1,6 @@
 #include <iostream>
 
-/* Page 272
+/* Page 275
   Exercise 7.23: Write your own version of the Screen class.
 
   Exercise 7.24: Give your Screen class three constructors: a default constructor; a constructor
