@@ -21,7 +21,7 @@ int main(int argc, char const *argv[]){
   Screen sc_2 = {15, 20};
   print_screen(std::cout, sc_2);
 
-  Screen sc_3(13, 19, 'f');
+  Screen sc_3(13, 19, 'x');
   print_screen(std::cout, sc_3);
 
   //Exercise 7.25

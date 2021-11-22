@@ -17,7 +17,7 @@ class Screen{
     using pos = std::string::size_type;   // typdef unsigned pos;
     //constructors
     Screen() = default;
-    Screen(pos ht, pos wd) : height(ht), width(wd), contents(ht*wd, ' ') {}
+    Screen(pos ht, pos wd) : height(ht), width(wd), contents(ht*wd, '-') {}
     Screen(pos ht, pos wd, char ch) : height(ht), width(wd), contents(ht*wd, ch) {}
   private:
     pos cursor;           // position of cursor on the screen
