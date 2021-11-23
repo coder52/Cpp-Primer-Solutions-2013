@@ -1,4 +1,5 @@
-#include <iostream>
+#ifndef SCREEN_H
+#define SCREEN_H
 
 /* Page 278
     Exercise 7.27: Add the move, set, and display operations to your version of
@@ -72,3 +73,5 @@ void Screen::do_display(std::ostream &os) const {
     std::cout<<std::endl;
   }
 }
+
+#endif
