@@ -26,11 +26,11 @@ class Screen{
     Screen &move(const pos, const pos);
     Screen &set(const char);
     Screen &set(pos, pos, char);
-    Screen display(std::ostream &os) {
+    Screen &display(std::ostream &os) {
       do_display(os);
       return *this;
     };
-    const Screen display(std::ostream &os) const {
+    const Screen &display(std::ostream &os) const {
       do_display(os);
       return *this;
     };
