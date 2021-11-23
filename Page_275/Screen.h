@@ -1,4 +1,5 @@
-#include <iostream>
+#ifndef SCREEN_H
+#define SCREEN_H
 
 /* Page 275
   Exercise 7.23: Write your own version of the Screen class.
@@ -36,3 +37,5 @@ std::ostream &print_screen(std::ostream &os, const Screen &sc){
   }
   return os;
 }
+
+#endif
