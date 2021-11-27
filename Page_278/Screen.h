@@ -64,10 +64,10 @@ Screen &Screen::set(pos row, pos column, char ch){
 
 inline
 void Screen::do_display(std::ostream &os) const {
-  static unsigned count=0;
+  static pos count=0;
   os<<"Screen "<<count++<<" :"<<height<<"x"<<width<<std::endl;
-  for(unsigned i=0; i<height;i++){
-    for(unsigned j=0; j<width;j++){
+  for(pos i=0; i<height;i++){
+    for(pos j=0; j<width;j++){
       os<<contents[(i*width + j)];
     }
     std::cout<<std::endl;
