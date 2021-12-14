@@ -27,7 +27,6 @@ struct Sales_data {
     // Exercise 7.37:
     // defines the default constructor as well as one that takes a string argument
     Sales_data(std::string s = " "): bookNo(s) { }  //default value of s is blank caracter
-    // remaining constructors unchanged
     Sales_data(std::string s, unsigned cnt, double rev):
                     bookNo(s), units_sold(cnt), revenue(rev*cnt) { }
     Sales_data(std::istream &is){
